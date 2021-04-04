@@ -12,7 +12,10 @@ import { computed } from 'vue'
 export default {
 	props: {
     modelValue: String,
-		isSearch: Boolean
+		isSearch: Boolean,
+		// modelModifiers: {
+		// 	default: () => ({})
+		// }
   },
 	setup(props, ctx) {
 		const iconColor = computed(() => { return `#888` })
@@ -28,6 +31,15 @@ export default {
 			handleChange
 		}
 	}
+	// methods: {
+	// 	emitValue(e) {
+	// 		let value = e.target.value
+	// 		if (this.modelModifiers.myModel) {
+	// 			value = value+1
+	// 		}
+	// 		this.$emit('update:modelValue', value)
+	// 	}
+  // }
 }
 </script>
 

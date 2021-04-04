@@ -174,13 +174,24 @@ export default {
     // box-sizing: border-box;
     
   }
+  &:deep(.van-tabs--line .van-tabs__wrap) {
+    height: 88px;
+  }
   &:deep(.van-tab) {
     border-radius: 24px;
     background-color: #fff;
     margin: 0 10px;
+    padding: 0 4px;
+    color: #646566;
+    font-size: 28px;
+    line-height: 28px;
   }
   &:deep(.van-cell-group){
     border-radius: 24px;
+  }
+  &:deep(.van-tabs__line) {
+    height: 6px;
+    width: 80px;
   }
 }
 </style>
